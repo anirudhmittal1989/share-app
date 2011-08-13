@@ -23,20 +23,6 @@ class HomeController < ApplicationController
     end
     
     # Send an email
-    Pony.mail(:to => 'psalas@proofpoint.com',
-              :from => 'psalas@proofpoint.com',
-              :subject => 'Hello',
-              :via => :smtp,
-              :via_options => {
-                :address => 'ultraman.lab.proofpoint.com',
-                :port => '25',
-                #:enable_starttls_auto => true,
-                #:user_name => 'psalas',
-                #:password => '',
-                #:authentication => :plain,
-                #:domain => "HELO",
-              }
-              )
   end
 
 end
