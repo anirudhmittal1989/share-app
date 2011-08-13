@@ -1,0 +1,6 @@
+<h1>Home#index</h1>
+<p>LIST</p>
+<%for a in @list%>
+    <a href="<%=a.url.to_s%>"><%=a.url.to_s%></a><%=a.content.to_s%><br>
+<%end%>
+<p>Find me in app/views/home/index.html.erb</p>
